@@ -1,0 +1,35 @@
+name: Chat
+main: it.ax3lt.chat.main
+version: 1.4
+author: ax3lt
+api-version: 1.15
+prefix: Chat
+softdepend: [Essentials, SuperVanish]
+
+commands:
+  chat:
+    description: Chat
+    permission: chat
+    permission-message: "Sorry! You don't have permission to execute that command."
+    default: true
+  msg:
+    aliases: [w,m,t,pm,emsg,epm,tell,etell,whisper,ewhisper]
+
+  r:
+
+  tpa:
+    aliases: [call,ecall,etpa,tpask,etpask]
+
+  tpahere:
+    aliases: [etpahere]
+
+permissions:
+  chat.use:
+    description: Use the plugin
+    default: true
+  chat.reload:
+    description: Reload config.yml
+    default: op
+  chat.everyone:
+    description: Use @everyone in chat
+    default: op
